@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="11" markerHeight="11" refX="8" refY="5.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,5.5 L0,11 z" fill="#7d8aa0"/>
+    </marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1280" height="560" fill="#0b1220"/>
+  <text x="640" y="48" text-anchor="middle" fill="#e7edf6" font-size="26" font-weight="700">How the ClickFix attack unfolds</text>
+  <line x1="290" y1="178.0" x2="350" y2="178.0" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="600" y1="178.0" x2="660" y2="178.0" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="910" y1="178.0" x2="970" y2="178.0" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="1095.0" y1="226" x2="1095.0" y2="400" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="970" y1="448.0" x2="910" y2="448.0" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="660" y1="448.0" x2="600" y2="448.0" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="350" y1="448.0" x2="290" y2="448.0" stroke="#7d8aa0" stroke-width="2.5" marker-end="url(#ah)"/>
+  <g filter="url(#sh)">
+    <rect x="40" y="130" width="250" height="96" rx="12" fill="#241a10" stroke="#e0883c" stroke-width="2"/>
+    <circle cx="68" cy="158" r="16" fill="#e0883c"/><text x="68" y="163" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">1</text>
+    <text x="94" y="164" fill="#ffffff" font-size="16" font-weight="700">Phishing email</text>
+    <text x="58" y="190" fill="#e7c9a6" font-size="12">A link from a trusted friend</text>
+    <text x="58" y="207" fill="#e7c9a6" font-size="12">whose site &amp; mailbox were hacked</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="350" y="130" width="250" height="96" rx="12" fill="#10202f" stroke="#3d8ad1" stroke-width="2"/>
+    <circle cx="378" cy="158" r="16" fill="#3d8ad1"/><text x="378" y="163" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">2</text>
+    <text x="404" y="164" fill="#ffffff" font-size="16" font-weight="700">Compromised website</text>
+    <text x="368" y="190" fill="#a9cbe8" font-size="12">Real page loads; a hidden</text>
+    <text x="368" y="207" fill="#a9cbe8" font-size="12">loader is injected in the header</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="660" y="130" width="250" height="96" rx="12" fill="#1b1430" stroke="#8a63d2" stroke-width="2"/>
+    <circle cx="688" cy="158" r="16" fill="#8a63d2"/><text x="688" y="163" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">3</text>
+    <text x="714" y="164" fill="#ffffff" font-size="16" font-weight="700">EtherHiding</text>
+    <text x="678" y="190" fill="#c7b5ea" font-size="12">Next stage pulled from a</text>
+    <text x="678" y="207" fill="#c7b5ea" font-size="12">blockchain smart contract</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="970" y="130" width="250" height="96" rx="12" fill="#1b1430" stroke="#8a63d2" stroke-width="2"/>
+    <circle cx="998" cy="158" r="16" fill="#8a63d2"/><text x="998" y="163" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">4</text>
+    <text x="1024" y="164" fill="#ffffff" font-size="16" font-weight="700">Evasion &amp; OS check</text>
+    <text x="988" y="190" fill="#c7b5ea" font-size="12">Skips sandboxes; selects the</text>
+    <text x="988" y="207" fill="#c7b5ea" font-size="12">Windows or macOS payload</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="970" y="400" width="250" height="96" rx="12" fill="#10202f" stroke="#3d8ad1" stroke-width="2"/>
+    <circle cx="998" cy="428" r="16" fill="#3d8ad1"/><text x="998" y="433" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">5</text>
+    <text x="1024" y="434" fill="#ffffff" font-size="16" font-weight="700">Fake CAPTCHA</text>
+    <text x="988" y="460" fill="#a9cbe8" font-size="12">Secretly copies a command</text>
+    <text x="988" y="477" fill="#a9cbe8" font-size="12">onto the clipboard</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="660" y="400" width="250" height="96" rx="12" fill="#241a10" stroke="#e0883c" stroke-width="2"/>
+    <circle cx="688" cy="428" r="16" fill="#e0883c"/><text x="688" y="433" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">6</text>
+    <text x="714" y="434" fill="#ffffff" font-size="16" font-weight="700">Victim runs it</text>
+    <text x="678" y="460" fill="#e7c9a6" font-size="12">Win+R / Terminal, paste, Enter</text>
+    <text x="678" y="477" fill="#e7c9a6" font-size="12">— the user runs the attack</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="350" y="400" width="250" height="96" rx="12" fill="#271012" stroke="#d14f4f" stroke-width="2"/>
+    <circle cx="378" cy="428" r="16" fill="#d14f4f"/><text x="378" y="433" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">7</text>
+    <text x="404" y="434" fill="#ffffff" font-size="16" font-weight="700">In-memory loader</text>
+    <text x="368" y="460" fill="#e9b4b1" font-size="12">Downloaded via a trusted</text>
+    <text x="368" y="477" fill="#e9b4b1" font-size="12">public CDN (jsDelivr / GitHub)</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="40" y="400" width="250" height="96" rx="12" fill="#271012" stroke="#d14f4f" stroke-width="3"/>
+    <circle cx="68" cy="428" r="16" fill="#d14f4f"/><text x="68" y="433" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1220">8</text>
+    <text x="94" y="434" fill="#ffffff" font-size="16" font-weight="700">Compromise + C2</text>
+    <text x="58" y="460" fill="#e9b4b1" font-size="12">Built-in tools load a remote</text>
+    <text x="58" y="477" fill="#e9b4b1" font-size="12">DLL; beacons to attacker</text>
+  </g>
+  <g font-size="13" fill="#93a1b5">
+    <rect x="120" y="528" width="13" height="13" rx="3" fill="#e0883c"/><text x="140" y="539">Human / social engineering</text>
+    <rect x="362" y="528" width="13" height="13" rx="3" fill="#3d8ad1"/><text x="382" y="539">Website &amp; browser</text>
+    <rect x="541" y="528" width="13" height="13" rx="3" fill="#8a63d2"/><text x="561" y="539">Blockchain hosting &amp; evasion</text>
+    <rect x="797" y="528" width="13" height="13" rx="3" fill="#d14f4f"/><text x="817" y="539">Malware delivery / C2</text>
+  </g>
+</svg>
